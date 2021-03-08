@@ -1,0 +1,72 @@
+git init (cria um repositório local)
+
+pwd (mostra a pasta atual)
+
+mkdir nomeDaSuaPasta
+
+cd nomeDaPasta (para entrar em uma pasta)
+
+ls (mostra as coisas dentro da sua pasta do projeto)
+ls -a (mostra as coisas q estão ocultas dentro da sua pasta, tipo o .git)
+
+git status
+
+git log (mostra as alterações feitas e quem fez)
+git log --oneline (mostra as alterações feitas simplificado)
+git log --graph (grafico)
+git log --oneline --graph (grafico e alterações simplidicado)
+
+git add a.txt(um por um)
+
+git branch (mostra o ramo que vc se encontra, seja ele o principal ou secundário)
+
+git checkout (rash/codigo do commit para a versão q vc quer voltar no tempo)
+git checkout master(retorna para a ultima versão salva antes de vc ter feito algo)
+git checkout a.txt (desfaz alterações feitas)
+
+git reset HEAD (remove o conteudo do conteiner q foram salvas da ultima vez)
+git reset --hard (codigo do commit e apagou as modifições no repositório)
+
+git diff(mostrar as mudanças antes do ultimo commit salvo)
+
+git . (add todos os arquivos)
+
+git commit -m "Seu comentário"
+git commit -am "seu comentário e já salva o arquivo"
+
+git log --oneline --graph --all (ve as coisas modificadas em todos os ramos, não apenas o atual)
+git log --graph --all (ve o grafico em todos os ramos)
+Se o terminal travar o cursor no graph é só pressionar o Q
+
+git checkout -b nomeDoRamo(cria um novo ramo no projeto)
+git checkout master (volta ao ramo master)
+
+git merge nomeDoRamoParaFusao
+git merge --abort (cancela a fusão)
+
+
+para colocar o seu projeto no git vc precisa criar o repositório e fazer oq eles mesmos já indicam
+para pegar de um repositório local vc vai digitar:
+git remote add (e o seu próprio q vai aparecer)
+
+para saber mais sobre o repositório externo:
+git remote -v
+
+para finalmente enviar ele pro repositório externo:
+git push -u origin master
+
+code . (abre o vs code)
+
+touch a.txt(cria arquivos)
+touch nomeDaPara/nomeDoArquivo.qualquercoisa
+
+cd .. (volta uma pasta)
+
+clear (ctrl l)
+
+criando repositório no git e clonando no windows:
+git clone (link do clone pego lá no git)
+git push (envia as coisas lá pro git)
+git pull (sincroniza as alterações feitas direto do git pra o diretório local)
+
+git fetch (faz download das coisas q foram alteradas sem fazer fusão para verificar as mudanças)
